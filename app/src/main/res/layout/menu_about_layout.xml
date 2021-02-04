@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/topbar_layout"
+        android:layout_width="match_parent"
+        android:background="#FB8C00"
+        android:layout_height="?actionBarSize">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_back_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_marginStart="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/back_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:background="#4d4d4d"
+        app:layout_constraintTop_toBottomOf="@id/topbar_layout"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Send your feedback to"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="hello@simplemobiletools.com"
+            android:textColor="#FF8300"
+            app:layout_constraintTop_toBottomOf="@id/text1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@id/text2"
+            app:layout_constraintStart_toStartOf="@id/text2"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            android:background="#FFF33131"/>
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Before you ask the quation please read the"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/text2"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="frequently asked quation"
+            android:textColor="#FF8300"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@id/text4"
+            app:layout_constraintStart_toStartOf="@id/text4"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            android:background="#FFF33131"/>
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Upgrade to pro"
+            android:textColor="#FF8300"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/text4"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@id/text5"
+            app:layout_constraintStart_toStartOf="@id/text5"
+            app:layout_constraintTop_toBottomOf="@id/text5"
+            android:background="#FFF33131"/>
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="More apps"
+            android:textColor="#FF8300"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/text5"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@id/text6"
+            app:layout_constraintStart_toStartOf="@id/text6"
+            app:layout_constraintTop_toBottomOf="@id/text6"
+            android:background="#FFF33131"/>
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Invite friends"
+            android:textColor="#FF8300"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/text6"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@id/text7"
+            app:layout_constraintStart_toStartOf="@id/text7"
+            app:layout_constraintTop_toBottomOf="@id/text7"
+            android:background="#FFF33131"/>
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Rate us"
+            android:textColor="#FF8300"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/text7"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@id/text8"
+            app:layout_constraintStart_toStartOf="@id/text8"
+            app:layout_constraintTop_toBottomOf="@id/text8"
+            android:background="#FFF33131"/>
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Third party licences"
+            android:textColor="#FF8300"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/text8"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="@id/text9"
+            app:layout_constraintStart_toStartOf="@id/text9"
+            app:layout_constraintTop_toBottomOf="@id/text9"
+            android:background="#FFF33131"/>
+
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Follow us"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@id/text9"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="v 5.1.2"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/text12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copyright and Simple Mobile Tools 2019"
+            android:textColor="#fff"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_location_on_black_24dp"
+            app:layout_constraintBottom_toTopOf="@+id/text11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text10"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/insta"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/text11"
+            app:layout_constraintStart_toEndOf="@id/facebook"
+            app:layout_constraintTop_toBottomOf="@id/text10"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
